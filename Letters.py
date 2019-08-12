@@ -194,11 +194,8 @@ class Letters:
         buttons.off('back')
         buttons.Button('help', (cx, cy))
 
-    def g_init(self):
-        g.init()
-
     def run(self, restore=False):
-        self.g_init()
+        g.init()
         if not self.journal:
             utils.load()
         self.let = let.Let()

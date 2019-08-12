@@ -127,7 +127,7 @@ class PeterActivity(activity.Activity):
         pygame.display.set_mode((Gdk.Screen.width(),
                                  Gdk.Screen.height() - GRID_CELL_SIZE),
                                 pygame.RESIZABLE)
-        self.game.g_init()
+
         self.game.run(restore=True)
 
     def _button_cb(self, button=None, color=None):
